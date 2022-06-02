@@ -5,7 +5,7 @@ div.className = 'main-container'
 div.innerHTML = `
 <header>
 <div class="heading">
-  <h1>Harry Potter Character's API</h1>
+  <h1>Harry Potter Character's A</h1>
   <p>Search your favourite character name</p>
 </div>
 </header>
