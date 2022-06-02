@@ -1,0 +1,236 @@
+@import url('http://fonts.cdnfonts.com/css/harry-potter');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=PT+Serif&family=Zen+Loop&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+}
+
+/* --------- main-content  --------- */
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-transform: capitalize;
+}
+
+/* --------- header  --------- */
+
+.heading {
+    padding: 45px 0 0 0;
+    text-align: center;
+}
+
+.heading h1 {
+    font-family: 'Harry Potter', sans-serif;
+}
+
+.heading p {
+    font-family: 'Zen Loop', cursive;
+    padding: 5px 0;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* --------- left & right content  --------- */
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.left-content {
+    font-family: 'Acme', sans-serif;
+    width: 20%;
+    text-align: center;
+    border-right: 2px solid rgba(161, 161, 161, 0.468);
+}
+
+.left-content h3 {
+    margin: 15px 0 25px 0;
+}
+
+.left-content p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.right-content {
+    width: 75%;
+}
+
+/* --------- search-box  --------- */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    padding: 0 0 20px 0;
+}
+
+.search-box input {
+    font-family: 'Acme', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    height: 45px;
+    width: 50%;
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+}
+
+.search-box input::placeholder {
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: #CC0000;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 8px 16px;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+/* --------- alert popup  --------- */
+
+.alert {
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 0.7px;
+    text-align: center;
+    width: 75%;
+}
+
+/* --------- Api response content  --------- */
+
+.response-content {
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    font-size: 17px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.image {
+    margin-right: 25px;
+}
+
+.image img {
+    border-radius: 10px;
+}
+
+.response-content p {
+    margin-bottom: 10px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+/* --------- Media-Queries --------- */
+
+@media (min-width: 320px) and (max-width: 768px) {
+    section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .left-content {
+        width: 100%;
+    }
+
+    .right-content {
+        width: 100%;
+    }
+
+    .search-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    button {
+        margin: 12px 0 0 0;
+    }
+
+    .alert {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .response-content {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .image {
+        margin: 10px auto 20px auto;
+    }
+
+    .response-data {
+        margin: 20px auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .left-content {
+        width: 100%;
+    }
+
+    .right-content {
+        width: 100%;
+    }
+
+    .search-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    button {
+        margin: 12px 0 0 0;
+    }
+
+    .alert {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .response-content {
+        width: 100%;
+        display: flex;
+        margin: 30px auto 20px auto;
+    }
+}
